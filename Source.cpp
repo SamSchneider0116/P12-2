@@ -42,7 +42,7 @@ int main() {
 /*
 wordCount: Counts words in given text file
 @param fileName - Name of text file to count words in
-@return numwords - Number of words in text file (returns -1 in case of error)
+@return numwords - Number of words (>= 1 letter) in text file (returns -1 in case of error)
 */
 int wordCount(string fileName) {
 	ifstream inFile;
@@ -108,7 +108,7 @@ void pressEnterToContinue() {
 /*
 charCount: Counts characters in given text file
 @param fileName - Name of text file to count characters in
-@return numChars - Number of characters in text file exclusing spaces (returns -1 in case of error)
+@return numChars - Number of characters in text file exclusing spaces and punctuation (returns -1 in case of error)
 */
 int charCount(string fileName) {
 	ifstream inFile;
